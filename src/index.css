@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0C0E;
+    color: #F4F4F6;
+    letter-spacing: 0.01em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* High-Contrast Light Theme Overrides */
+  html.light body {
+    background-color: #F4F5F8;
+    color: #111318;
+  }
+
+  html.light header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  html.light footer {
+    background-color: #FFFFFF !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  html.light .bg-\[\#0B0C0E\] {
+    background-color: #FFFFFF !important;
+  }
+
+  html.light .bg-\[\#131519\] {
+    background-color: #F8F9FC !important;
+  }
+
+  html.light .bg-\[\#1C1F26\] {
+    background-color: #EDEFF4 !important;
+  }
+
+  html.light .bg-\[\#18181B\] {
+    background-color: #E2E5EC !important;
+  }
+
+  html.light .text-\[\#F4F4F6\] {
+    color: #0F172A !important;
+  }
+
+  html.light .text-\[\#9496A1\] {
+    color: #475569 !important;
+  }
+
+  html.light .border-white\/8,
+  html.light .border-white\/10,
+  html.light .border-white\/12,
+  html.light .border-white\/15,
+  html.light .border-white\/20,
+  html.light .border-white\/6 {
+    border-color: rgba(0, 0, 0, 0.12) !important;
+  }
+
+  html.light input,
+  html.light select {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border-color: rgba(0, 0, 0, 0.18) !important;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+

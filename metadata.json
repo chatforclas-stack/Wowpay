@@ -1,0 +1,8 @@
+{
+  "name": "LevelUp Payments",
+  "description": "A gaming marketplace for digital goods, providing secure payments, loyalty rewards, and seamless in-app balance management for gamers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
